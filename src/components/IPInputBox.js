@@ -8,10 +8,6 @@ const IPInputBox = ({ IPValue, handlerChange, handlerTipoIp }) => {
                 ...r
             })
         }
-        if(e.target.name==="byte1" && parseInt(e.target.value)>=224){
-            alert(`Clase A: [0 - 127], Clase B: [128 - 191], Clase C: [129 - 223],\n ${e.target.value} esta fuera del rango [0 - 223]`)
-            return
-        } 
         handlerChange(e)
     }
     return (

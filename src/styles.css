@@ -7,6 +7,14 @@
     padding-top: 2;
     padding: 4px;     
 }
+.box-items p{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    margin-left: 18px;
+    margin-right: 18px;
+}
 .ip-box8 input{
     text-align: center;
     margin-right: 4px;
@@ -71,4 +79,39 @@ color: blue;
 }
 .host{
     color: green;
+}
+.error{
+    border: 1px solid rgb(255, 94, 0);
+    color:red;
+    padding: 2px;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.prefix{
+    margin: 0px 18px 8px;
+}
+.ml{
+    margin-right: 15px;  
+}
+.prefix-item{
+    display: inline;  
+}
+.prefix-item select{
+    margin-left: 5px;
+    width: 92px;
+}
+.i-item :first-child{
+    display: inline-block;
+    width: 180px;
+    font-weight: 800;
+    color: darkblue;
+}
+.i-item span{
+    font-size:medium;    
+}
+.ip{
+    color: rgb(19, 78, 0);
+    font-weight: 900;
 }
