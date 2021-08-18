@@ -85,4 +85,4 @@ const tipoIP = (firstOcteto) => {
     return { a: false, b: false, c: false }
 }
 
-export { byteToBinary, tipoIP, validMask, prepareBinary,prepareIpRed };
+export { byteToBinary, tipoIP, validMask, prepareBinary, prepareIpRed, formatBinaryToIP };

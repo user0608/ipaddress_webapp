@@ -1,7 +1,6 @@
 import OptionCheck from "./OptionCheck"
 
-const HeaderBox = ({ selectedOption = { a: false, b: false, c: false } }) => {
-    const rango = { start: "100", end: "100" }
+const HeaderBox = ({ selectedOption = { a: false, b: false, c: false } }) => {    
     return (
         <div className="header">
             <div className="ip-box8">

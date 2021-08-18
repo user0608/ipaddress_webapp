@@ -20,14 +20,12 @@ const BinaryIpBox = ({ipValue={}}) => {
                 />
                 <input
                     name="byte1"
-                    type="text"
-                    type="text"
+                    type="text"                   
                     value={byteToBinary(ipValue?.byte3)} 
                     disabled
                 />
                 <input
                     name="byte1"
-                    type="text"
                     type="text"
                     value={byteToBinary(ipValue?.byte4)} 
                     disabled
