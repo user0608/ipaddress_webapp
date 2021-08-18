@@ -1,7 +1,9 @@
+import Calculadora from "./Calculadora"
+
 const App = () => {
-  return (
+    return (
     <div>
-      <h1>Hola a todos!</h1>
+      <Calculadora/>
     </div>
   );
 }
