@@ -136,6 +136,9 @@ color: blue;
     border: 1px solid black;  
     margin: 0;
 }
+.mi-tabla-2{
+    width: "100%";
+}
 .page{
     width: 100px;
     margin-left: 6px;
@@ -146,4 +149,18 @@ color: blue;
 }
 .page-form form{
     margin-right: 20px;
+}
+
+.options span{
+    margin: 0 15px;
+}
+
+.bb-la{    
+    margin: 10px;
+}
+.bb{
+    width: 50px;
+}
+.bb2{
+    width: 150px; 
 }
