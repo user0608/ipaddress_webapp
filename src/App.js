@@ -2,7 +2,7 @@ import Calculadora from "./Calculadora"
 
 const App = () => {
     return (
-    <div>
+    <div className="container">
       <Calculadora/>
     </div>
   );

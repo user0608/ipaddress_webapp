@@ -102,6 +102,7 @@ const convertBinaryToIpFormat = (IPBinary = "") => {
     }
     return ip
 }
+
 const mascar = {
     a: "11111111.00000000.00000000.00000000",
     b: "11111111.11111111.00000000.00000000",

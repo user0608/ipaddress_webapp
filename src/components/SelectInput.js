@@ -26,7 +26,7 @@ const SelectInput = ({ changeHandler, tipo, nr = 1 }) => {
                 const hh = calNumHost(value, tipo)
                 setHostValue(hh)
                 setRedValue(value)
-                changeHandler({ numRed: value, numHost: hh })
+                changeHandler((d) => ({ ...d, sub: value, host: hh }))
                 break;
             case "hosts":
                 let j = 0
@@ -37,7 +37,7 @@ const SelectInput = ({ changeHandler, tipo, nr = 1 }) => {
                 rr = 2 ** j
                 setRedValue(rr)
                 setHostValue(value)
-                changeHandler({ numRed: rr, numHost: value })
+                changeHandler((d) => ({ ...d, sub: value, host: hh }))
                 break;
             default:
         }
@@ -55,15 +55,16 @@ const SelectInput = ({ changeHandler, tipo, nr = 1 }) => {
             h = [...h, 2 ** (i + 2) - 2]
         }
         setRedes(r)
-        setHosts(h)       
-        const hhhh =calNumHost(nr, tipo)
+        setHosts(h)
+        const hhhh = calNumHost(nr, tipo)
+        changeHandler((d) => ({ ...d, sub: redValue, host: 0 }))
         setHostValue(hhhh)
-    }, [tipo,nr])
+    }, [tipo, nr, changeHandler, redValue])
 
     return (
         <div className="prefix">
             <div className="prefix-item ml">
-                <label htmlFor="redes_id">SubRedes:</label>
+                <label htmlFor="redes_id">Sub:</label>
                 <select name="redes" id="redes_id"
                     onChange={meddleWareChange}
                     value={redValue}
